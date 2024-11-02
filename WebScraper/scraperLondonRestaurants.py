@@ -15,7 +15,7 @@ user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 option.add_argument(f"user-agent={user_agent}")
 
 driver = webdriver.Chrome(options=option)  
-url = 'https://www.google.com/search?sca_esv=bc238d30d88dbf83&tbm=lcl&q=durham+restaurants&rflfq=1&num=10&sa=X&ved=2ahUKEwjfrfKgnr6JAxXRVUEAHXQ1HYwQjGp6BAghEAE&biw=1707&bih=799&dpr=1.5#rlfi=hd:;si:;mv:[[54.807133199999996,-1.5688738],[54.766819899999994,-1.5895789]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u5!2m2!5m1!1sgcid_3hamburger_1restaurant!1m4!1u5!2m2!5m1!1sgcid_3steak_1house!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e5!2m1!1e3!3sIAEqAkdC,lf:1,lf_ui:9'
+url = 'https://www.google.com/search?q=london+restaurants&client=firefox-b-d&sca_esv=bc238d30d88dbf83&biw=1707&bih=799&tbm=lcl&ei=ymkmZ_KuMu63hbIPo-DW-Q0&ved=0ahUKEwjyu4yenr6JAxXuW0EAHSOwNd8Q4dUDCAk&uact=5&oq=london+restaurants&gs_lp=Eg1nd3Mtd2l6LWxvY2FsIhJsb25kb24gcmVzdGF1cmFudHMyChAAGIAEGLEDGA0yBxAAGIAEGA0yBhAAGAcYHjIGEAAYBxgeMgcQABiABBgNMgcQABiABBgNMgcQABiABBgNMgcQABiABBgNMgYQABgHGB4yBxAAGIAEGA1I2QlQAFj1CHACeACQAQCYAX-gAcEFqgEDMy40uAEDyAEA-AEBmAIEoALWAcICCBAAGAUYDRgewgIIEAAYCBgNGB6YAwCSBwMzLjGgB8c1&sclient=gws-wiz-local#rlfi=hd:;si:2798106636650523162,l,ChJsb25kb24gcmVzdGF1cmFudHNI9oWn5oywgIAIWh4QARgAGAEiEmxvbmRvbiByZXN0YXVyYW50cyoCCAOSARptb2Rlcm5fZXVyb3BlYW5fcmVzdGF1cmFudKoBSxABKg8iC3Jlc3RhdXJhbnRzKAAyHhABIhr1afWCuEo2zvoNNeuhaciv4HCOYv-AV1MqOzIWEAIiEmxvbmRvbiByZXN0YXVyYW50cw,y,TuAbSSW1fOQ;mv:[[51.5283514,-0.07209499999999999],[51.5049389,-0.20730649999999998]]'
 driver.get(url)
 
 # simulate user behaviour by waitinelg randomly
@@ -55,7 +55,7 @@ for restaurant in soup.find_all('div', class_='VkpGBb'):
 
 print(restaurants)
 
-filename = 'durhamRestaurants.csv'
+filename = 'londonRestaurants.csv'
 with open(filename, 'w', newline='') as f:
     w = csv.DictWriter(f,['name','starsRating','reviewNumber','reviewQuote'])
     w.writeheader()
