@@ -2,7 +2,6 @@ from tkinter import *
 from tkinter import ttk
 
 def search():
-	main_page.pack_forget()
 	hotel_frame.pack_forget()
 	restaurant_frame.pack_forget()
 	attractions_frame.pack_forget()
@@ -15,7 +14,6 @@ def search():
 		top.geometry("350x50")
 		top.title("Error")
 		Label(top, text= "Please select a category.", font=('Arial, 20')).place(x=175,y=25, anchor = CENTER)
-		main_page.pack()
 		return
 
 	if (selected_location == ""):
@@ -23,8 +21,9 @@ def search():
 		top.geometry("350x50")
 		top.title("Error")
 		Label(top, text= "Please select a location.", font=('Arial, 20')).place(x=175,y=25, anchor = CENTER)
-		main_page.pack()
 		return
+
+	main_page.pack_forget()
 
 	if (selected_category == "Hotels"):
 		hotel_frame.pack(side=BOTTOM, fill=BOTH, expand=False)
@@ -66,7 +65,7 @@ search_button = Button(header, text = 'Search', font = "Arial, 20", command = se
 search_button.place(x=1500, y=75, anchor = CENTER)
 
 main_page = Frame(root, height = 2000, bg = 'lavender')
-main_page.pack(side=BOTTOM, fill=BOTH, expand=False)
+main_page.pack(side=TOP, fill=BOTH, expand=False)
 
 welcome_text = Label(main_page, text = 'Welcome to our application!', bg = 'lavender', font = "Arial, 30")
 welcome_text.place(x = 800, y = 200, anchor = CENTER)
