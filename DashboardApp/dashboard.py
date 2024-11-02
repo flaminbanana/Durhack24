@@ -1,4 +1,5 @@
 from tkinter import *
+import tkinter.font as tkFont
 from tkinter import ttk
 
 def search():
@@ -39,6 +40,9 @@ root = Tk()
 root.title("Dashboard App")
 root.geometry("1600x900")
 root.resizable(False, False)
+
+bigfont = tkFont.Font(family="Helvetica",size=20)
+root.option_add("*TCombobox*Listbox*Font", bigfont)
 
 
 header = Frame(root, height=150, bg = 'white')
