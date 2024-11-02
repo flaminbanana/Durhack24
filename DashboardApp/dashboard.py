@@ -10,14 +10,14 @@ def search():
 	selected_category = chosen_category.get()
 	selected_location = chosen_location.get()
 
-	if (selected_category == ""):
+	if (selected_category == "" or selected_category == "--"):
 		top = Toplevel(root)
 		top.geometry("350x50")
 		top.title("Error")
 		Label(top, text= "Please select a category.", font=('Arial, 20')).place(x=175,y=25, anchor = CENTER)
 		return
 
-	if (selected_location == ""):
+	if (selected_location == "" or selected_category == "--"):
 		top = Toplevel(root)
 		top.geometry("350x50")
 		top.title("Error")
@@ -32,9 +32,11 @@ def search():
 	elif (selected_category == "Food"):
 		restaurant_frame.pack(side=BOTTOM, fill=BOTH, expand=False)
 		restaurant_tag.config(text = "Selected location: " + selected_location)
-	else :
+	elif (selected_category == "Attractions") :
 		attractions_frame.pack(side=BOTTOM, fill=BOTH, expand=False)
 		attractions_tag.config(text = "Selected location: " + selected_location)
+	else:
+		pass
 
 root = Tk()
 root.title("Dashboard App")
@@ -55,15 +57,17 @@ location_text = Label(header, text='Choose a location: ', font='Arial, 20', bg='
 location_text.place(x = 650, y = 75, anchor = CENTER)
 
 location = StringVar()
-chosen_location = ttk.Combobox(header, state = 'readonly', values  = ('Durham', 'London', 'Manchester'), width = 15, textvariable = location, font = "Arial, 20")
+chosen_location = ttk.Combobox(header, state = 'readonly', values  = ('--', 'Durham', 'London', 'Manchester'), width = 15, textvariable = location, font = "Arial, 20")
 chosen_location.place(x=900, y=75, anchor = CENTER)
+chosen_location.set("--")
 
 category_text = Label(header, text='Category: ', font='Arial, 20', bg='white')
 category_text.place(x = 1100, y = 75, anchor = CENTER)
 
 category = StringVar()
-chosen_category = ttk.Combobox(header, state = 'readonly', values = ('Hotels', 'Food', 'Things to do'), width = 15, textvariable = category, font = "Arial, 20")
+chosen_category = ttk.Combobox(header, state = 'readonly', values = ('--', 'Hotels', 'Food', 'Attractions'), width = 15, textvariable = category, font = "Arial, 20")
 chosen_category.place(x=1300, y=75, anchor = CENTER)
+chosen_category.set("--")
 
 search_button = Button(header, text = 'Search', font = "Arial, 20", command = search)
 search_button.place(x=1500, y=75, anchor = CENTER)
@@ -107,7 +111,7 @@ attractions_rating_label = Label(attractions_frame, text = 'Rating', bg = 'laven
 attractions_rating_label.place(x = 600, y = 100, anchor=CENTER)
 attractions_review_count_label = Label(attractions_frame, text = 'Number of Reviews', bg = 'lavender', font = "Arial, 20")
 attractions_review_count_label.place(x = 1000, y = 100, anchor=CENTER)
-attractions_price_label = Label(attractions_frame, text = 'Admission fee', bg = 'lavender', font = "Arial, 20")
+attractions_price_label = Label(attractions_frame, text = 'Attraction Type', bg = 'lavender', font = "Arial, 20")
 attractions_price_label.place(x = 1400, y = 100, anchor=CENTER)
 
 root.mainloop()
