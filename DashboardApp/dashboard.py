@@ -155,10 +155,10 @@ search_button.place(x=1500, y=75, anchor = CENTER)
 main_page = Frame(root, height = 2000, bg = 'lavender')
 main_page.pack(side=TOP, fill=BOTH, expand=False)
 
-welcome_text = Label(main_page, text = 'Welcome to our application!', bg = 'lavender', font = "Arial, 30")
+welcome_text = Label(main_page, text = 'This is a UK City Tourist Spot Data Access Point', bg = 'lavender', font = "Arial, 15")
 welcome_text.place(x = 800, y = 200, anchor = CENTER)
 
-instruction_text = Label(main_page, text = 'Please choose a location and category above.', bg = 'lavender', font = "Arial, 20")
+instruction_text = Label(main_page, text = 'Navigate the Search Bar Above to Access Data', bg = 'lavender', font = "Arial, 15")
 instruction_text.place(x = 800, y = 250, anchor = CENTER)
 
 root.mainloop()
