@@ -3,8 +3,10 @@ import numpy as np
 
 def requestData(location, category):
     # returns dataframe object of csv file corresponding to request
+    location = location.lower()
     catname = category.capitalize()
     filename = location + catname + ".csv"
+    print(filename)
     df = pd.read_csv("scrapedData/" + filename)
     return df
 
