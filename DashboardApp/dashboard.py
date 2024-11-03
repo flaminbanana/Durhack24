@@ -1,6 +1,8 @@
 from tkinter import *
 import tkinter.font as tkFont
 from tkinter import ttk
+import csvPandas as cv
+from pandastable import Table, TableModel
 
 def search():
 	hotel_frame.pack_forget()
@@ -27,7 +29,7 @@ def search():
 	main_page.pack_forget()
 
 	if (selected_category == "Hotels"):
-		hotel_frame.pack(side=BOTTOM, fill=BOTH, expand=False)
+		hotel_frame.pack(side=TOP, fill=BOTH, expand=False)
 		hotel_tag.config(text = "Selected location: " + selected_location)
 	elif (selected_category == "Food"):
 		restaurant_frame.pack(side=BOTTOM, fill=BOTH, expand=False)
@@ -82,13 +84,19 @@ instruction_text = Label(main_page, text = 'Please choose a location and categor
 instruction_text.place(x = 800, y = 250, anchor = CENTER)
 
 
-hotel_frame = Frame(root, height = 2000, bg = 'lavender')
+hotel_frame = Frame(root, height = 200, bg = 'lavender')
 hotel_tag = Label(hotel_frame, text =  'Selected location: ', bg = 'lavender', font = "Arial, 20")
 hotel_tag.place(x = 30, y = 30, anchor = W)
 hotel_name_label = Label(hotel_frame, text = 'Hotel Name', bg = 'lavender', font = "Arial, 20")
-hotel_name_label.place(x = 500, y = 100, anchor=CENTER)
+hotel_name_label.place(x = 200, y = 100, anchor=CENTER)
+hotel_rating_label = Label(hotel_frame, text = 'Rating', bg = 'lavender', font = "Arial, 20")
+hotel_rating_label.place(x = 400, y = 100, anchor=CENTER)
 hotel_price_label = Label(hotel_frame, text = 'Price (per night)', bg = 'lavender', font = "Arial, 20")
-hotel_price_label.place(x = 1100, y = 100, anchor=CENTER)
+hotel_price_label.place(x = 1400, y = 100, anchor=CENTER)
+hotel_results_frame = Frame(hotel_frame, height = 150)
+hotel_results_frame.columnconfigure(0,weight=1)
+hotel_results_frame.columnconfigure(1,weight=1)
+
 
 restaurant_frame = Frame(root, height = 2000, bg = 'lavender')
 restaurant_tag = Label(restaurant_frame, text =  'Selected location: ', bg = 'lavender', font = "Arial, 20")
@@ -114,4 +122,11 @@ attractions_review_count_label.place(x = 1000, y = 100, anchor=CENTER)
 attractions_price_label = Label(attractions_frame, text = 'Attraction Type', bg = 'lavender', font = "Arial, 20")
 attractions_price_label.place(x = 1400, y = 100, anchor=CENTER)
 
+df = cv.requestData("manchester","hotels")
+"""
+f = Frame(hotel_results_frame)
+f.pack()"""
+pt = Table(hotel_frame, dataframe=df)
+pt.show() 
 root.mainloop()
+
