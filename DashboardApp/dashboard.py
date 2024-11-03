@@ -4,6 +4,7 @@ from tkinter import ttk
 import csvPandas as cv
 from pandastable import Table, TableModel
 import time
+import googlemapsLinkGen as gmaps
 
 def close_menus():
 	...
@@ -21,7 +22,7 @@ def cleanup_resources():
 
 def create_hotel_frame():
 	cleanup_resources()
-	hotel_frame = Frame(root, height = 200, bg = 'lavender')
+	hotel_frame = Frame(root, height = 2000, bg = 'lavender')
 	hotel_tag = Label(hotel_frame, text =  'Selected location: ', bg = 'lavender', font = "Arial, 20")
 	hotel_tag.place(x = 30, y = 30, anchor = W)
 	hotel_name_label = Label(hotel_frame, text = 'Hotel Name', bg = 'lavender', font = "Arial, 20")
@@ -37,7 +38,7 @@ def create_hotel_frame():
 
 def create_restaurant_frame():
 	cleanup_resources()
-	restaurant_frame = Frame(root, height = 200, bg = 'lavender')
+	restaurant_frame = Frame(root, height = 2000, bg = 'lavender')
 	restaurant_tag = Label(restaurant_frame, text =  'Selected location: ', bg = 'lavender', font = "Arial, 20")
 	restaurant_tag.place(x = 30, y = 30, anchor = W)
 	restaurant_name_label = Label(restaurant_frame, text = 'Restaurant Name', bg = 'lavender', font = "Arial, 20")
@@ -55,7 +56,7 @@ def create_restaurant_frame():
 
 def create_attractions_frame():
 	cleanup_resources()
-	attractions_frame = Frame(root, height = 200, bg = 'lavender')
+	attractions_frame = Frame(root, height = 2000, bg = 'lavender')
 	attractions_tag = Label(attractions_frame, text =  'Selected location: ', bg = 'lavender', font = "Arial, 20")
 	attractions_tag.place(x = 30, y = 30, anchor = W)
 	attractions_name_label = Label(attractions_frame, text = 'Attraction Name', bg = 'lavender', font = "Arial, 20")
@@ -129,18 +130,18 @@ root.option_add("*TCombobox*Listbox*Font", bigfont)
 header = Frame(root, height=150, bg = 'white')
 header.pack(side=TOP, fill=BOTH, expand=False)
 
-app_label = Label(header, text='App', width=25, font="Arial, 60", bg="white", fg="black")
+app_label = Label(header, text='UK City Tourist Spot Data Access Point', width=35, font="Arial, 15", bg="white", fg="black")
 app_label.place(x = 200, y = 75, anchor = CENTER)
 
-location_text = Label(header, text='Choose a location: ', font='Arial, 20', bg='white')
-location_text.place(x = 650, y = 75, anchor = CENTER)
+location_text = Label(header, text='City: ', font='Arial, 15', bg='white')
+location_text.place(x = 750, y = 75, anchor = CENTER)
 
 location = StringVar()
 chosen_location = ttk.Combobox(header, state = 'readonly', values  = ('--', 'Durham', 'London', 'Manchester'), width = 15, textvariable = location, font = "Arial, 20")
 chosen_location.place(x=900, y=75, anchor = CENTER)
 chosen_location.set("--")
 
-category_text = Label(header, text='Category: ', font='Arial, 20', bg='white')
+category_text = Label(header, text='Type of Spot: ', font='Arial, 15', bg='white')
 category_text.place(x = 1100, y = 75, anchor = CENTER)
 
 category = StringVar()
