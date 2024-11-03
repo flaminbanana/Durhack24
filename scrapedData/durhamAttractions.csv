@@ -1,20 +1,20 @@
-name,starsRating,reviewNumber,attractionType
-Durham Cathedral,4.8,10K,Cathedral
-Durham Castle,4.6,1.8K,Castle
-Oriental Museum,4.7,676,Museum
-Botanic Garden,4.6,853,Botanical Garden
-National Trust - Crook Hall Gardens,4.6,1.3K,Garden
-Finchale Priory,4.6,1.1K,Monestary
-"Beamish, the Living Museum of the North",4.8,24K,Open-Air Museum
-"Museum of Archaeology , Durham University",4.5,98,Archeaelogical Museum
-Gala Theatre & Cinema,4.5,1.7K,Performing Arts Theatre
-Hall Hill Farm,4.8,2K,Children's Farm
-Wharton Park,4.6,1.1K,Park and Garden
-Durham River Walk Car Park Picnic Spot,4.8,24,PIcnic Ground
-"Raby Castle, Park and Gardens",4.6,3.2K,Castle
-High Force Waterfall,4.6,2.3K,Tourist Attraction
-"Ushaw: Historic House, Chapels & Gardens",4.6,1.3K,Historical Place Museum
-Durham Heritage Coast,4.7,3.1K,Nature Reserve
-Adventure Valley,4.4,1.8K,Theme Park
-Durham Museum,4.2,61,Museum
-The Bowes Museum,4.6,2.9K,Art Museum
+name,starsRating,reviewNumber,attractionType,coordinates
+Durham Cathedral,4.8,10K,Cathedral,"54.77326195,-1.5763332649262018"
+Durham Castle,4.6,1.8K,Castle,"54.775496849999996,-1.576937372136009"
+Oriental Museum,4.7,676,Museum,"54.76386535,-1.5813050514831857"
+Botanic Garden,4.6,853,Botanical Garden,"54.7586296,-1.5756999"
+National Trust - Crook Hall Gardens,4.6,1.3K,Garden,N/A
+Finchale Priory,4.6,1.1K,Monestary,"54.818310249999996,-1.5401493872498757"
+"Beamish, the Living Museum of the North",4.8,24K,Open-Air Museum,N/A
+"Museum of Archaeology , Durham University",4.5,98,Archeaelogical Museum,N/A
+Gala Theatre & Cinema,4.5,1.7K,Performing Arts Theatre,N/A
+Hall Hill Farm,4.8,2K,Children's Farm,"54.7899443,-1.8050569"
+Wharton Park,4.6,1.1K,Park and Garden,"54.780131,-1.5833450698466256"
+Durham River Walk Car Park Picnic Spot,4.8,24,PIcnic Ground,N/A
+"Raby Castle, Park and Gardens",4.6,3.2K,Castle,N/A
+High Force Waterfall,4.6,2.3K,Tourist Attraction,"54.6503045,-2.1876458"
+"Ushaw: Historic House, Chapels & Gardens",4.6,1.3K,Historical Place Museum,N/A
+Durham Heritage Coast,4.7,3.1K,Nature Reserve,N/A
+Adventure Valley,4.4,1.8K,Theme Park,"54.8073972,-1.5432415"
+Durham Museum,4.2,61,Museum,"54.7736413,-1.5744799797648956"
+The Bowes Museum,4.6,2.9K,Art Museum,"54.542038250000004,-1.9154047966021022"

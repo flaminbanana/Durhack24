@@ -1,21 +1,21 @@
-name,starsRating,reviewNumber,attractionType
-Tower of London,4.7,108K,Castle
-lastminute.com London Eye,4.5,181K,Ferris Wheel
-Tower Bridge,4.8,162K,Bridge
-St. Paul's Cathedral,4.7,46K,Cathedral
-Natural History Museum,4.7,28K,Museum
-Buckingham Palace,4.5,174K,Cultural Landmark
-The British Museum,4.7,156K,Museum
-Westminster Abbey,4.6,43K,Angelian Church
-Victoria and Albert Museum,4.7,59K,Art Museum
-The National Gallery,4.7,51K,Art Museum
-Kensington Palace,4.5,28K,Historical Place
-Hyde Park,4.7,130K,Park and Garden
-Big Ben,4.5,71K,Cultural Landmark
-Tate Modern,4.5,76K,Art Gallery
-Borough Market,4.6,104K,Fresh Food Market
-Trafalgar Square,4.6,126K,Plaza
-Science Museum,4.6,68K,Museum
-Shakespeare's Globe,4.6,22K,Performing Arts Theatre
-Royal Albert Hall,4.8,41K,Concert Hall
-London Transport Museum,4.4,11K,Museum
+name,starsRating,reviewNumber,attractionType,coordinates
+Tower of London,4.7,108K,Castle,"51.508217,-0.0761879025700761"
+lastminute.com London Eye,4.5,181K,Ferris Wheel,"51.5033416,-0.11967649999999999"
+Tower Bridge,4.8,162K,Bridge,"51.505515849999995,-0.07536648478961117"
+St. Paul's Cathedral,4.7,46K,Cathedral,"51.51378715,-0.09845055141832956"
+Natural History Museum,4.7,28K,Museum,"51.496510900000004,-0.17600190725447445"
+Buckingham Palace,4.5,174K,Cultural Landmark,"51.5008349,-0.1430045264505431"
+The British Museum,4.7,156K,Museum,N/A
+Westminster Abbey,4.6,43K,Angelian Church,"51.499399,-0.1273910483333311"
+Victoria and Albert Museum,4.7,59K,Art Museum,"51.496883800000006,-0.17163721656927572"
+The National Gallery,4.7,51K,Art Museum,"51.5089202,-0.1274819"
+Kensington Palace,4.5,28K,Historical Place,"51.505098950000004,-0.18763318757240555"
+Hyde Park,4.7,130K,Park and Garden,"51.5074889,-0.1622074056037135"
+Big Ben,4.5,71K,Cultural Landmark,"51.5007042,-0.1245721"
+Tate Modern,4.5,76K,Art Gallery,"51.5074293,-0.09934164882888792"
+Borough Market,4.6,104K,Fresh Food Market,"51.5055935,-0.0903474"
+Trafalgar Square,4.6,126K,Plaza,"51.508037,-0.12804941070724718"
+Science Museum,4.6,68K,Museum,"51.49739825,-0.174672605918894"
+Shakespeare's Globe,4.6,22K,Performing Arts Theatre,"51.50811965,-0.0971901351203674"
+Royal Albert Hall,4.8,41K,Concert Hall,"51.501006950000004,-0.17740582939224336"
+London Transport Museum,4.4,11K,Museum,"51.511977900000005,-0.12121970411090272"

@@ -1,21 +1,21 @@
-name,starsRating,reviewNumber,price
-Premier Inn Durham City Centre (Walkergate) hotel,4.3,1052,54
-"Radisson Blu Hotel, Durham",4.3,2393,85
-Travelodge Durham,4.0,931,45
-"Hotel Indigo Durham, an IHG Hotel",4.6,1142,96
-Delta Hotels Durham Royal County,4.2,1449,80
-The Funky Monk - One-Bedroom Apartment,N/A,N/A,N/A
-OYO The Townhouse,4.6,353,144
-Bannatyne Hotel Durham,4.0,442,50
-Ramside Hall Hotel,4.3,3072,126
-The City Rooms Durham,4.1,174,100
-The Kingslodge Inn,4.3,652,116
-The Queens Head,4.2,405,39
-Redworth Hall Hotel,4.2,2341,75
-Farnley Tower Hotel,4.3,251,120
-Bridge Hotel,4.4,481,100
-The Victoria,4.7,597,98
-Premier Inn Durham North hotel,4.3,855,51
-40Winks Guest House & Residence,4.9,90,N/A
-Durham Castle Bed & Breakfast,5.0,2,N/A
-Durham City Cottages,4.1,1458,N/A
+name,starsRating,reviewNumber,price,coordinates
+Premier Inn Durham City Centre (Walkergate) hotel,4.3,1052,54,"54.77911025,-1.5754891550290058"
+"Radisson Blu Hotel, Durham",4.3,2393,85,"54.78048735,-1.577293929801323"
+Travelodge Durham,4.0,931,45,"54.7797184,-1.5613696508897825"
+"Hotel Indigo Durham, an IHG Hotel",4.6,1142,96,N/A
+Delta Hotels Durham Royal County,4.2,1449,80,N/A
+The Funky Monk - One-Bedroom Apartment,N/A,N/A,N/A,N/A
+OYO The Townhouse,4.6,353,144,N/A
+Bannatyne Hotel Durham,4.0,442,50,"54.78496905,-1.5342211053442028"
+Ramside Hall Hotel,4.3,3072,126,"54.7950227,-1.5152121"
+The City Rooms Durham,4.1,174,100,N/A
+The Kingslodge Inn,4.3,652,116,N/A
+The Queens Head,4.2,405,39,"54.632169950000005,-1.7192606218883824"
+Redworth Hall Hotel,4.2,2341,75,N/A
+Farnley Tower Hotel,4.3,251,120,N/A
+Bridge Hotel,4.4,481,100,N/A
+The Victoria,4.7,597,98,"54.77207385,-1.5704779483812947"
+Premier Inn Durham North hotel,4.3,855,51,"54.8070613,-1.584958484465738"
+40Winks Guest House & Residence,4.9,90,N/A,N/A
+Durham Castle Bed & Breakfast,5.0,2,N/A,N/A
+Durham City Cottages,4.1,1458,N/A,N/A
