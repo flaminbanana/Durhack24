@@ -2,7 +2,9 @@ from tkinter import *
 import tkinter.font as tkFont
 from tkinter import ttk
 import csvPandas as cv
-from pandastable import Table, TableModel
+import warnings
+warnings.simplefilter(action="ignore",category=FutureWarning)
+from pandastable import Table, TableModel, config
 import time
 import googlemapsLinkGen as gmaps
 
@@ -102,7 +104,12 @@ def search():
 	elif chosen_category.get() == "Attractions":
 		attractions_frame, attractions_tag = create_attractions_frame()
 		pt = Table(attractions_frame, dataframe=df, height = 200)
-	
+	pt.editable = False
+	options = config.load_options()
+	options = {
+		"cellwidth": 200
+	}
+	config.apply_options(options, pt)
 	pt.show()
 	last_pt = pt
 	if (selected_category == "Hotels"):
