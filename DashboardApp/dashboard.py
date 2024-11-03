@@ -185,7 +185,7 @@ search_frame.pack(side=TOP, fill=BOTH, expand=False)
 google_map_gen = Label(search_frame, text = 'Find location on Google Maps: ', bg = 'peach puff', font = "Arial, 15")
 google_map_gen.place(x = 400, y = 50, anchor = CENTER)
 
-lat_long = Label(search_frame, text = 'Latitude and Longtitude: ', bg = 'peach puff', font = "Arial, 15")
+lat_long = Label(search_frame, text = 'Coordinates: ', bg = 'peach puff', font = "Arial, 15")
 lat_long.place(x = 250, y = 150, anchor = CENTER)
 
 lat_long_entry = Entry(search_frame, width = 30, font = "Arial, 15")
@@ -197,13 +197,13 @@ lat_long_button.place(x = 400, y = 200, anchor = CENTER)
 directions = Label(search_frame, text = 'Directions: ', bg = 'peach puff', font = "Arial, 15")
 directions.place(x = 1200, y = 50, anchor = CENTER)
 
-directions_latlong_1 = Label(search_frame, text = 'Latitude and Longtitude 1: ', bg = 'peach puff', font = "Arial, 15")
+directions_latlong_1 = Label(search_frame, text = 'Coordinates of Origin: ', bg = 'peach puff', font = "Arial, 15")
 directions_latlong_1.place(x = 1000, y = 150, anchor = CENTER)
 
 directions_entry_1 = Entry(search_frame, width = 30, font = "Arial, 15")
 directions_entry_1.place(x = 1300, y = 150, anchor = CENTER)
 
-directions_latlong_2 = Label(search_frame, text = 'Latitude and Longtitude 2: ', bg = 'peach puff', font = "Arial, 15")
+directions_latlong_2 = Label(search_frame, text = 'Coordinates of Destination: ', bg = 'peach puff', font = "Arial, 15")
 directions_latlong_2.place(x = 1000, y = 200, anchor = CENTER)
 
 directions_entry_2 = Entry(search_frame, width = 30, font = "Arial, 15")
