@@ -1,3 +1,3 @@
 import subprocess
 
-subprocess.run(["python", "DashboardApp/dashboard.py"])
+subprocess.run(["python3", "DashboardApp/dashboard.py"])

@@ -6,12 +6,6 @@ from pandastable import Table, TableModel
 import time
 import googlemapsLinkGen as gmaps
 
-def close_menus():
-	...
-
-def show_menus():
-	...
-
 
 resources = []
 
@@ -22,7 +16,7 @@ def cleanup_resources():
 
 def create_hotel_frame():
 	cleanup_resources()
-	hotel_frame = Frame(root, height = 2000, bg = 'lavender')
+	hotel_frame = Frame(root, bg = 'lavender')
 	hotel_tag = Label(hotel_frame, text =  'Selected location: ', bg = 'lavender', font = "Arial, 20")
 	hotel_tag.place(x = 30, y = 30, anchor = W)
 	hotel_name_label = Label(hotel_frame, text = 'Hotel Name', bg = 'lavender', font = "Arial, 20")
@@ -38,7 +32,7 @@ def create_hotel_frame():
 
 def create_restaurant_frame():
 	cleanup_resources()
-	restaurant_frame = Frame(root, height = 2000, bg = 'lavender')
+	restaurant_frame = Frame(root, bg = 'lavender')
 	restaurant_tag = Label(restaurant_frame, text =  'Selected location: ', bg = 'lavender', font = "Arial, 20")
 	restaurant_tag.place(x = 30, y = 30, anchor = W)
 	restaurant_name_label = Label(restaurant_frame, text = 'Restaurant Name', bg = 'lavender', font = "Arial, 20")
@@ -56,7 +50,7 @@ def create_restaurant_frame():
 
 def create_attractions_frame():
 	cleanup_resources()
-	attractions_frame = Frame(root, height = 2000, bg = 'lavender')
+	attractions_frame = Frame(root, bg = 'lavender')
 	attractions_tag = Label(attractions_frame, text =  'Selected location: ', bg = 'lavender', font = "Arial, 20")
 	attractions_tag.place(x = 30, y = 30, anchor = W)
 	attractions_name_label = Label(attractions_frame, text = 'Attraction Name', bg = 'lavender', font = "Arial, 20")
@@ -101,13 +95,13 @@ def search():
 	df = cv.requestData(chosen_location.get(), chosen_category.get())
 	if chosen_category.get() == "Hotels":
 		hotel_frame, hotel_tag = create_hotel_frame()
-		pt = Table(hotel_frame, dataframe=df)
+		pt = Table(hotel_frame, dataframe=df, height = 200)
 	elif chosen_category.get() == "Restaurants":
 		restaurant_frame, restaurant_tag = create_restaurant_frame()
-		pt = Table(restaurant_frame, dataframe=df)
+		pt = Table(restaurant_frame, dataframe=df, height = 200)
 	elif chosen_category.get() == "Attractions":
 		attractions_frame, attractions_tag = create_attractions_frame()
-		pt = Table(attractions_frame, dataframe=df)
+		pt = Table(attractions_frame, dataframe=df, height = 200)
 	
 	pt.show()
 	last_pt = pt
@@ -118,6 +112,21 @@ def search():
 	elif (selected_category == "Attractions") :
 		attractions_tag.config(text = "Selected location: " + selected_location)
 
+def generate_link():
+	coords = lat_long_entry.get()
+	generated_link = Text(search_frame, width = 40, height = 1, font='Arial, 15')
+	generated_link.insert(1.0, gmaps.genGoogleMapsLink(coords))
+	generated_link.place(x = 400, y = 300, anchor = CENTER)
+	generated_link.configure(state='disabled')
+
+def generate_directions():
+	latlong1 = directions_entry_1.get()
+	latlong2 = directions_entry_2.get()
+	generated_directions = Text(search_frame, width = 40, height = 2, font='Arial, 15')
+	generated_directions.insert(1.0, gmaps.genGoogleMapsDirections(latlong1, latlong2))
+	generated_directions.place(x = 1200, y = 325, anchor = CENTER)
+	generated_directions.configure(state='disabled')
+
 root = Tk()
 root.title("Dashboard App")
 root.geometry("1600x900")
@@ -125,7 +134,6 @@ root.resizable(False, False)
 
 bigfont = tkFont.Font(family="Helvetica",size=20)
 root.option_add("*TCombobox*Listbox*Font", bigfont)
-
 
 header = Frame(root, height=150, bg = 'white')
 header.pack(side=TOP, fill=BOTH, expand=False)
@@ -160,6 +168,39 @@ welcome_text.place(x = 800, y = 200, anchor = CENTER)
 
 instruction_text = Label(main_page, text = 'Navigate the Search Bar Above to Access Data', bg = 'lavender', font = "Arial, 15")
 instruction_text.place(x = 800, y = 250, anchor = CENTER)
+
+search_frame = Frame(root, height = 525, bg = 'peach puff')
+search_frame.pack(side=TOP, fill=BOTH, expand=False)
+
+google_map_gen = Label(search_frame, text = 'Find location on Google Maps: ', bg = 'peach puff', font = "Arial, 15")
+google_map_gen.place(x = 400, y = 50, anchor = CENTER)
+
+lat_long = Label(search_frame, text = 'Latitude and Longtitude: ', bg = 'peach puff', font = "Arial, 15")
+lat_long.place(x = 250, y = 150, anchor = CENTER)
+
+lat_long_entry = Entry(search_frame, width = 30, font = "Arial, 15")
+lat_long_entry.place(x = 550, y = 150, anchor = CENTER)
+
+lat_long_button = Button(search_frame, text = 'Generate Link', font = "Arial, 15", command = generate_link)
+lat_long_button.place(x = 400, y = 200, anchor = CENTER)
+
+directions = Label(search_frame, text = 'Directions: ', bg = 'peach puff', font = "Arial, 15")
+directions.place(x = 1200, y = 50, anchor = CENTER)
+
+directions_latlong_1 = Label(search_frame, text = 'Latitude and Longtitude 1: ', bg = 'peach puff', font = "Arial, 15")
+directions_latlong_1.place(x = 1000, y = 150, anchor = CENTER)
+
+directions_entry_1 = Entry(search_frame, width = 30, font = "Arial, 15")
+directions_entry_1.place(x = 1300, y = 150, anchor = CENTER)
+
+directions_latlong_2 = Label(search_frame, text = 'Latitude and Longtitude 2: ', bg = 'peach puff', font = "Arial, 15")
+directions_latlong_2.place(x = 1000, y = 200, anchor = CENTER)
+
+directions_entry_2 = Entry(search_frame, width = 30, font = "Arial, 15")
+directions_entry_2.place(x = 1300, y = 200, anchor = CENTER)
+
+directions_button = Button(search_frame, text = 'Generate Directions', font = "Arial, 15", command = generate_directions)
+directions_button.place(x = 1200, y = 250, anchor = CENTER)
 
 root.mainloop()
 
