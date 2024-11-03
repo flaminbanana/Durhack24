@@ -6,7 +6,6 @@ def requestData(location, category):
     location = location.lower()
     catname = category.capitalize()
     filename = location + catname + ".csv"
-    print(filename)
     df = pd.read_csv("scrapedData/" + filename)
     return df
 

@@ -98,6 +98,8 @@ def search():
 	if chosen_category.get() == "Hotels":
 		hotel_frame, hotel_tag = create_hotel_frame()
 		pt = Table(hotel_frame, dataframe=df, height = 200)
+		df["reviewNumber"]=df["reviewNumber"].map(lambda x:"{0:.0f}".format(x))
+		df["price"]=df["price"].map(lambda x:"{0:.0f}".format(x))
 	elif chosen_category.get() == "Restaurants":
 		restaurant_frame, restaurant_tag = create_restaurant_frame()
 		pt = Table(restaurant_frame, dataframe=df, height = 200)
@@ -110,6 +112,7 @@ def search():
 		"cellwidth": 200
 	}
 	config.apply_options(options, pt)
+	df["starsRating"]=df["starsRating"].map(lambda x:"{0:.1f}".format(x))
 	pt.show()
 	last_pt = pt
 	if (selected_category == "Hotels"):
