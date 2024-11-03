@@ -1,21 +1,21 @@
-name,starsRating,reviewNumber,attractionType
-Science and Industry Museum,4.4,18K,Science museum
-Manchester Museum,4.6,8.1K,Museum
-Manchester Art Gallery,4.6,9.6K,Art Gallery
-Etihad Stadium,4.6,28K,Library
-Manchester Cathedral,4.7,6.1K,Cathedral
-National Football Museum,4.3,6.6K,National museum
-People's History Museum,4.5,3.2K,Museum
-The Whitworth,4.5,2.4K,Art museum
-Old Trafford,4.6,49K,Circus
-John Rylands Research Institute and Library,4.8,1.2K,Library
-AO Arena,4.4,22K,Arena
-Heaton Park,4.6,15K,Park and Garden
-IWM North,4.5,7.3K,War Museum
-Greater Manchester Police Museum & Archives,4.7,664,Museum
-The Lowry,4.6,6.6K,Performing Arts Theatre
-Royal Exchange Theatre,4.7,4.2K,Performing Arts Theatre
-Victoria Baths,4.7,1.2K,Heritage Building
-Fletcher Moss Botanical Gardens,4.7,3.2K,Park and Garden
-HOME Manchester,4.6,5K,Performing Arts Theatre
-National Trust - Castlefield Viaduct,4.5,425,Historical Landmark
+name,starsRating,reviewNumber,attractionType,coordinates
+Science and Industry Museum,4.4,18K,Science museum,"53.4769753,-2.2546213"
+Manchester Museum,4.6,8.1K,Museum,"53.4660417,-2.2337265"
+Manchester Art Gallery,4.6,9.6K,Art Gallery,"53.4786409,-2.2414174661238158"
+Etihad Stadium,4.6,28K,Library,"53.48309105,-2.2002520023433307"
+Manchester Cathedral,4.7,6.1K,Cathedral,"53.48522680000001,-2.2443983138760952"
+National Football Museum,4.3,6.6K,National museum,"53.485761800000006,-2.242112347637123"
+People's History Museum,4.5,3.2K,Museum,"53.48135165,-2.253428762056861"
+The Whitworth,4.5,2.4K,Art museum,"53.4602141,-2.229547447385462"
+Old Trafford,4.6,49K,Circus,"53.46310955,-2.2913864850545362"
+John Rylands Research Institute and Library,4.8,1.2K,Library,N/A
+AO Arena,4.4,22K,Arena,"53.4880867,-2.244172376938317"
+Heaton Park,4.6,15K,Park and Garden,"53.53462495,-2.256086901696594"
+IWM North,4.5,7.3K,War Museum,"53.469706099999996,-2.2990579943637286"
+Greater Manchester Police Museum & Archives,4.7,664,Museum,"53.4824013,-2.2323944"
+The Lowry,4.6,6.6K,Performing Arts Theatre,"53.4708161,-2.2961032435781696"
+Royal Exchange Theatre,4.7,4.2K,Performing Arts Theatre,"53.4858524,-2.2354523"
+Victoria Baths,4.7,1.2K,Heritage Building,"53.46014685,-2.2164245270655494"
+Fletcher Moss Botanical Gardens,4.7,3.2K,Park and Garden,"53.4092096,-2.2302190480853374"
+HOME Manchester,4.6,5K,Performing Arts Theatre,"53.473626100000004,-2.246606002379947"
+National Trust - Castlefield Viaduct,4.5,425,Historical Landmark,N/A

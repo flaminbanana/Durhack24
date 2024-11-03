@@ -1,19 +1,19 @@
-name,starsRating,reviewNumber,price
-Travelodge London Central City Road,3.8,4054,57
-Travelodge London City,4.1,2273,43
-The Tower Hotel,4.1,9131,116
-Novotel London Blackfriars,4.4,2093,132
-DoubleTree by Hilton London - Tower of London,4.2,5465,108
-St Martins Lane London,4.6,2477,212
-Travelodge London Covent Garden,3.8,5326,83
-The Z Hotel Covent Garden,4.2,696,72
-YOTEL London City,4.1,765,89
-Premier Inn London Tolworth hotel,4.0,884,51
-Travelodge London Excel,3.7,1316,44
-Zedwell Piccadilly Circus,4.1,6680,79
-Premier Inn London Edgware hotel,3.9,1214,51
-Smart Hyde Park View,3.5,1509,28
-The Ritz London,4.6,6831,734
-Park Plaza Westminster Bridge London,4.4,9097,132
-Safestay London Kensington Holland Park,3.6,1670,22
-"The Langham, London",4.6,3537,487
+name,starsRating,reviewNumber,price,coordinates
+Travelodge London Central City Road,3.8,4054,57,"51.5225673,-0.0868331"
+Travelodge London City,4.1,2273,43,"51.51550745,-0.07476477240333504"
+The Tower Hotel,4.1,9131,116,"51.50660995,-0.0731951454698233"
+Novotel London Blackfriars,4.4,2093,132,"51.5050914,-0.10509614344955909"
+DoubleTree by Hilton London - Tower of London,4.2,5465,108,"51.5109654,-0.07830960554665123"
+St Martins Lane London,4.6,2477,212,"51.51042635,-0.1262646471904242"
+Travelodge London Covent Garden,3.8,5326,83,"51.5157436,-0.12415659844594558"
+The Z Hotel Covent Garden,4.2,696,72,N/A
+YOTEL London City,4.1,765,89,"51.52274385,-0.10446227529940669"
+Premier Inn London Tolworth hotel,4.0,884,51,N/A
+Travelodge London Excel,3.7,1316,44,"51.50867355,0.042247008973091776"
+Zedwell Piccadilly Circus,4.1,6680,79,"51.5104287,-0.1336305"
+Premier Inn London Edgware hotel,3.9,1214,51,"51.6080934,-0.2767894980248798"
+Smart Hyde Park View,3.5,1509,28,"51.5118141,-0.1829253"
+The Ritz London,4.6,6831,734,"51.5071911,-0.1414246027939941"
+Park Plaza Westminster Bridge London,4.4,9097,132,"51.5008932,-0.11653800289165456"
+Safestay London Kensington Holland Park,3.6,1670,22,N/A
+"The Langham, London",4.6,3537,487,"51.5176576,-0.1435657463801965"

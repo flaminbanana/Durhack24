@@ -1,19 +1,19 @@
-name,starsRating,reviewNumber,price
-INNSiDE by Melia Manchester,4.5,1880,73
-Mercure Manchester Piccadilly Hotel,4.3,9874,86
-Travelodge Manchester Central Arena,4.0,2192,49
-Hotel Motel One Manchester-Royal Exchange,4.5,1684,60
-Malmaison Manchester,4.3,2060,96
-Premier Inn Manchester City Centre (Arena/Printworks) hotel,4.3,1785,55
-easyHotel Manchester City Centre,4.3,3932,40
-ibis Styles Manchester Portland Hotel,4.0,3192,63
-Hampton by Hilton Manchester Northern Quarter,4.2,782,67
-Hilton Manchester Deansgate,4.3,4727,185
-YOTEL Manchester Deansgate,4.3,891,65
-Native Manchester,4.5,685,86
-"Holiday Inn Manchester - City Centre, an IHG Hotel",4.4,2624,84
-The Midland,4.4,4905,116
-AC Hotel Manchester City Centre,4.0,713,88
-The Cow Hollow Hotel,4.6,334,75
-Kimpton Clocktower Hotel,4.5,3365,102
-DoubleTree by Hilton Manchester - Piccadilly,4.3,3058,101
+name,starsRating,reviewNumber,price,coordinates
+INNSiDE by Melia Manchester,4.5,1880,73,N/A
+Mercure Manchester Piccadilly Hotel,4.3,9874,86,"53.4797636,-2.2376165500000003"
+Travelodge Manchester Central Arena,4.0,2192,49,N/A
+Hotel Motel One Manchester-Royal Exchange,4.5,1684,60,"53.482135,-2.2441151"
+Malmaison Manchester,4.3,2060,96,"53.4791781,-2.2332353"
+Premier Inn Manchester City Centre (Arena/Printworks) hotel,4.3,1785,55,N/A
+easyHotel Manchester City Centre,4.3,3932,40,"53.4817102,-2.2329344"
+ibis Styles Manchester Portland Hotel,4.0,3192,63,"53.4802907,-2.2353564"
+Hampton by Hilton Manchester Northern Quarter,4.2,782,67,N/A
+Hilton Manchester Deansgate,4.3,4727,185,"53.4755262,-2.2504623"
+YOTEL Manchester Deansgate,4.3,891,65,"53.4806294,-2.2478992"
+Native Manchester,4.5,685,86,N/A
+"Holiday Inn Manchester - City Centre, an IHG Hotel",4.4,2624,84,N/A
+The Midland,4.4,4905,116,"53.40145165,-2.054255579609898"
+AC Hotel Manchester City Centre,4.0,713,88,N/A
+The Cow Hollow Hotel,4.6,334,75,"53.4823165,-2.2324893"
+Kimpton Clocktower Hotel,4.5,3365,102,"53.474327450000004,-2.2403099826162762"
+DoubleTree by Hilton Manchester - Piccadilly,4.3,3058,101,"53.4786682,-2.2332230188517084"
